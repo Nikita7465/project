@@ -12,10 +12,10 @@
 <body>
 
     <header class="">
-        <div class="header-top">
+        <div class="header-top bg-[#403C3B] px-4">
 
-            <div class="header-top-content">
-                <nav class="nav text-center">
+            <div class="header-top-content pl-3">
+                <!-- <nav class="nav-burger text-center">
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Горячие закуски</a></div>
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Холодные закуски</a></div>
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Мясные блюда</a></div>
@@ -24,7 +24,14 @@
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Гриль меню</a></div>
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Фирменные блюда</a></div>
                     <div class="nav-link"><a href="" class="font-medium text-gray-600">Напитки</a></div>
-                </nav>
+                </nav> -->
+
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class=" text-white font-bold text-xs">МЕНЮ</span>
+                </button>
             </div>
 
             <div class="header-search">
@@ -39,6 +46,23 @@
 
         </div>
     </header>
+
+
+    <style>
+
+    </style>
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+
 </body>
 
 </html>
